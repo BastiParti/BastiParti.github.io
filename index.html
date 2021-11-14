@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel=stylesheet>
+</head>
+<body>
+    <div class="card" style="width: 40em;">
+    <div class="card-body">
+    <div class="mb-3">
+        <label for="input" class="form-label">Eingabefeld: </label>
+        <input type="text" class="form-control" id="input" maxlength="1">
+    </div>
+    <div>
+      Verwendet: <span id="charUsed"></span>
+    </div>
+    <div id="hangman-wrap">
+        <div id="hangman-left">
+          <img id="hangman-img" src="src/hangman0.png" style="height: 25em; width: 30em;"/>
+          <div id="hangman-lives-w">
+            Versuche: <span id="hangman-lives"></span>
+          </div>
+        </div>
+        <div class="mb-3">
+            <label for="ergebnis" class="form-label">Wort: </label>
+            <input type="text" class="form-control" id="ergebnis" disabled>
+          </div>
+        <div id="hangman-right">
+      </div>
+      <div class="col-auto text-end">
+        <button id="enterbut" class="btn btn-primary mb-3">Bestätigen</button>
+      <div class="col-auto text-end">
+        <button id="hangman-reset" class="btn btn-primary mb-3">Neustart</button>
+      </div>
+    </div>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
